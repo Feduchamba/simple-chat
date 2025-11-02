@@ -1,0 +1,25 @@
+# Example configuration file for Simple Chat
+# Copy this file to config.yaml and modify as needed
+
+# Database Configuration (PostgreSQL)
+database:
+  host: localhost
+  port: "5432"
+  user: postgres
+  password: postgres
+  dbname: chatdb
+  sslmode: disable
+  # Alternative: use connection_url instead of individual fields
+  # connection_url: "host=localhost user=postgres password=postgres dbname=chatdb port=5432 sslmode=disable"
+
+# Server Configuration
+server:
+  port: "8080"
+
+# JWT Configuration
+jwt:
+  secret_key: "your-secret-key-change-in-production"
+
+
+
+
